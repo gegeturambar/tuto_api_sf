@@ -1,0 +1,41 @@
+registration_message: Enregistrez-vous !
+category:
+    category: categorie
+    create: Créer
+    delete: supprimer
+    update: éditer
+    flash_messages:
+        add: Le thème a bien été ajouté
+        delete: Le thème a bien été supprimé
+        delete_fail: Le thème n'a pas été supprimé convenablement
+        update: Le thème a bien été modifié
+movie:
+    movie: Film
+    title: Titre
+    category: Thème
+    releaseDate: Date de réalisation
+    poster: Image
+    create: Créer
+    delete: supprimer
+    update: éditer
+    flash_messages:
+        add: Le film a bien été ajouté
+        delete: Le film a bien été supprimé
+        delete_fail: Le film n'a pas été supprimé convenablement
+        update: Le film a bien été modifié
+actor:
+    actor: Acteur
+    firstname: Nom
+    lastname: Prénom
+    birthday: Anniversaire
+    portrait: Portrait
+    bio:  Bio
+    movies: Films
+    create: Créer
+    delete: supprimer
+    update: éditer
+    flash_messages:
+        add: L'acteur a bien été ajouté
+        delete: L'acteur a bien été supprimé
+        delete_fail: L'acteur n'a pas été supprimé convenablement
+        update: L'acteur a bien été modifié

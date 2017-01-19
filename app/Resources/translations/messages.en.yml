@@ -1,0 +1,41 @@
+registration_message: register
+category:
+    category: category
+    create: Create
+    delete: Delete
+    update: Update
+    flash_messages:
+            add: The theme has been added succesfully
+            delete: The theme has been deleted succesfully
+            delete_fail: The theme has not been deleted succesfully
+            update: The theme has been modified succesfully
+movie:
+    movie: movie
+    title: Title
+    category: Category
+    releaseDate: Release date
+    poster: Poster
+    create: Create
+    delete: Delete
+    update: Update
+    flash_messages:
+            add: The movie has been added succesfully
+            delete: The movie has been deleted succesfully
+            delete_fail: The movie has not been deleted succesfully
+            update: The movie has been modified succesfully
+actor:
+    actor: Actor
+    firstname: First Name
+    lastname: Last name
+    birthday: Birthday
+    portrait: Portrait
+    movies: Movies
+    bio:  Bio
+    create: Create
+    delete: Delete
+    update: Update
+    flash_messages:
+           add: The actor has been added succesfully
+           delete: The actor has been deleted succesfully
+           delete_fail: The actor has not been deleted succesfully
+           update: The actor has been modified succesfully

@@ -1,0 +1,6 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block fos_user_content %}
+    <span>{{ 'registration_message' | trans }}</span>
+{% include "@FOSUser/Registration/register_content.html.twig" %}
+{% endblock fos_user_content %}
