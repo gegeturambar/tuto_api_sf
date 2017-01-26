@@ -27,6 +27,7 @@ class User extends BaseUser
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      * @Expose()
+     * @Groups({"Me"})
      */
     protected $id;
 
@@ -50,6 +51,7 @@ class User extends BaseUser
      * @ORM\Column(name="firstname", type="string", length=255)
      *
      * @Expose()
+     * @Groups({"Me"})
      */
     private $firstname;
 
@@ -89,8 +91,47 @@ class User extends BaseUser
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Expose()
+     * @Groups({"Me"})
      */
     private $name;
+
+    /**
+     * @return mixed
+     */
+    public function getGroups()
+    {
+        return $this->groups;
+    }
+
+    /**
+     * @param mixed $groups
+     */
+    public function setGroups($groups)
+    {
+        $this->groups = $groups;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPreference()
+    {
+        return $this->preference;
+    }
+
+    /**
+     * @param mixed $preference
+     */
+    public function setPreference($preference)
+    {
+        $this->preference = $preference;
+    }
+
+    /**
+     * @ORM\OneToMany(targetEntity="MyBundle\Entity\Preference",mappedBy="user")
+     */
+    private $preference;
 
     /**
      * Get id

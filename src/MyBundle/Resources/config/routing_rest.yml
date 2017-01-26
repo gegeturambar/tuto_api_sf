@@ -1,4 +1,25 @@
 users :
   type: rest
   resource:     "MyBundle:UserRest"
-  name_prefix:  api_
+  name_prefix: api_
+
+places:
+    type: rest
+    resource: "MyBundle:Place"
+    name_prefix: api_
+prices:
+    type: rest
+    resource: "@MyBundle/Controller/Place/PriceController.php"
+    name_prefix: api_
+themes:
+    type: rest
+    resource: "@MyBundle/Controller/ThemeController.php"
+    name_prefix: api_
+themeplacemap:
+    type: rest
+    resource: "@MyBundle/Controller/ThemePlaceMapController.php"
+    name_prefix: api_
+preferences:
+    type: rest
+    resource: "@MyBundle/Controller/PreferenceController.php"
+    name_prefix: api_
