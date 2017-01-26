@@ -115,7 +115,7 @@ class PreferenceController extends Controller
     private function updatePreference(Request $request,$clearMissing = true ){
         $preference = $this->getDoctrine()->getRepository("MyBundle:Preference")->find($request->get('id'));
         if(empty($preference)){
-            throw $this->createNotFoundException();
+            throw $this->createNotFoundException("preference not found");
         }
         $form = $this->createForm(PreferenceType::class,$preference);
         $form->submit($request->request->all(), $clearMissing);
