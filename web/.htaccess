@@ -5,6 +5,24 @@
 # to each configured DirectoryIndex file (e.g. index.php, index.html, index.pl).
 DirectoryIndex app.php
 
+#<IfModule mod_headers.c>
+#    Header add Access-Control-Allow-Origin "*"
+#    Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+#</IfModule>
+
+#<Limit GET POST PUT DELETE OPTIONS>
+#  Allow from all
+#</Limit>
+
+
+#RewriteCond %{REQUEST_METHOD} OPTIONS
+#RewriteRule ^(.*)$ $1 [R=200,L,E=HTTP_ORIGIN:%{HTTP:ORIGIN}]]
+#Header set Access-Control-Allow-Origin "*"
+#Header always set Access-Control-Allow-Credentials "true"
+#Header always set Access-Control-Max-Age "1000"
+#Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding"
+#Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+
 # By default, Apache does not evaluate symbolic links if you did not enable this
 # feature in your server configuration. Uncomment the following line if you
 # install assets as symlinks or if you experience problems related to symlinks

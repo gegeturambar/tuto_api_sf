@@ -15,10 +15,12 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  */
 class Place
 {
-    public function __construct($name,$address)
+    public function __construct($name=null,$address=null)
     {
-        $this->address = $address;
-        $this->name = $name;
+        if(!is_null($address))
+            $this->address = $address;
+        if(!is_null($name))
+            $this->name = $name;
     }
 
     /**

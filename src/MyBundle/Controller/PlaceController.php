@@ -59,7 +59,14 @@ class PlaceController extends Controller
     public function postPlacesAction(Request $request)
     {
         $place = new Place();
-
+        /*
+        $place->setName($request->get('name'))
+            ->setAddress($request->get('address'));
+        $em = $this->getDoctrine()->getEntityManager();
+        $em->persist($place);
+        $em->flush();
+        return $place;
+        */
         $form = $this->createForm(PlaceType::class,$place);
 
         $form->submit($request->request->all());

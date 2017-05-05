@@ -7,6 +7,10 @@ places:
     type: rest
     resource: "MyBundle:Place"
     name_prefix: api_
+heroes:
+    type: rest
+    resource: "MyBundle:Hero"
+    name_prefix: api_
 prices:
     type: rest
     resource: "@MyBundle/Controller/Place/PriceController.php"

@@ -124,6 +124,7 @@ class PreferenceController extends Controller
             $em->persist($preference);
             $em->flush();
             return $preference;
+
         }else{
             return $form;
         }

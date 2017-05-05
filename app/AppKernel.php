@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new \FOS\RestBundle\FOSRestBundle(),
             new AppBundle\AppBundle(),
             new MyBundle\MyBundle(),
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
